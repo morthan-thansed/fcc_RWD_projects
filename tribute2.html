@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tribute</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: cursive;
+                font-family: Optima, Calibri, sans-serif;
+    
+            }
+            
+            body {
+                /* taken from: https://css-tricks.com/books/fundamental-css-tactics/scale-typography-screen-size/
+                formula for responsive size:
+                font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}               */
+                font-size: calc(14 + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+                /*might have to scale the line height using the same formula above*/
+                /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                min-height: 100vh;
+            }
+            li {
+                padding: 10px;
+                font-size: x-large;
+                margin-bottom: 10px;
+            }
+            div {
+                background-color: rgb(242, 243, 184);
+                padding: 5px 25px 15px 25px;
+                text-align: justify;
+            }
+            .description{
+                text-align: center;
+                font-size: calc(14 + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption{
+                font-size: calc(10 + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div class="container">
+
+                <div class="part1">
+                    <a href="https://en.wikipedia.org/wiki/Rodrigo_Duterte" target=_blank><h1 id="title">Rodrigo Roa Duterte</h1></a>
+                    <p class="description">The National Mayor of the Philippines</p>
+                </div>
+
+                <div class="part2">
+                    <img src="static/duterte1.jpg" alt="President Rodrigo Duterte during the 2016 Campaing Period.">
+                    <figcaption id="img-caption">President Duterte during the 2016 National Election</figcaption>
+                </div>
+
+
+                <div>
+                    <ul>
+                        <li>
+                            Duterte has pursued a foreign policy described by his administration as an "independent foreign policy", pursuing greater foreign relations with China and Russia and has distanced the country from its traditional ally the United States
+                        </li>
+                        <li>
+                            In November 8, the Supreme Court issued a verdict which paved the way for the burial of the late dictator Ferdinand Marcos at the Libingan ng mga Bayani (Heroes' Cemetery), which sparked protests. In November 18, Ferdinand Marcos was buried with full military honors at the Heroes' Cemetery. It sparked national outrage, especially among those who suffered human rights abuses under the Marcos regime.
+                        </li>
+                        <li>
+                            The war on drugs remains overwhelmingly popular among majority of Filipinos, with a poll by the Social Weather Stations in September 2019 returning a rating of "excellent" for Duterte's three-year campaign, with 82% satisfied due to a perception of less drugs and crime in the country
+                        </li>
+                        <li>
+                            In April 4, Duterte announced that the government shall 'close down' all operations within the island of Boracay, the country's number one tourism destination, due to 'environmental concerns'. Boracay was officially reopened to the public on October 26, 2019 following a six-month extensive clean-up. 
+                        </li>
+                        <li>
+                            On April 17, 2019, Duterte signed into law Republic Act 11310, also known as the Pantawid Pamilyang Pilipino Program (4Ps) Act. This law seeks to reduce national poverty by providing "conditional cash transfer to poor households for a maximum period of seven years, to improve the health, nutrition and education aspect of their lives"
+                        </li>
+                        <li>
+                            As of November 2019, since Duterte assumed position in June 2016, a total of 9,845 kilometres (6,117 mi) of roads, 2,709 bridges, 4,536 flood control projects, 82 evacuation centers, and 71,803 classrooms under the “Build, Build, Build” program were completed.
+                        </li>
+                        <li>
+                            During his campaign for the 2016 presidential election, one of Rodrigo Duterte's promises was the phasing out of contractualization and improvement to labor in the Philippines. Duterte signed an EO that would put an end to contractualization.
+                        </li>
+                        <li>
+                            On December 19, 2017, Duterte signed into law the Tax Reform for Acceleration and Inclusion Act (TRAIN Law), which lowered personal income tax and increased consumption tax particularly excise taxes on vehicles, sugar-sweetened beverages, petroleum products, tobacco and non-essential goods. 
+                        </li>
+                        <li>
+                            Duterte finished the first half of his six-year term with a record net satisfaction rating of 68%. In an SWS survey, conducted in April 2019, puts Duterte's approval ratings at 79%, higher than any of his predecessors at this stage in their presidencies.
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
